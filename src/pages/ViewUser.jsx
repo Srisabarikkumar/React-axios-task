@@ -20,7 +20,7 @@ function ViewUser() {
   const getUserData = async () => {
     try {
       const response = await axios.get(
-        `https:66d7f04737b1cadd8052b9a2.mockapi.io/users/${params.id}`
+        `https://66d7f04737b1cadd8052b9a2.mockapi.io/users/${params.id}`
       );
       console.log(response.data);
       setUser(response.data);
