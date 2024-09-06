@@ -91,19 +91,19 @@ function ViewUser() {
                           <Flex direction="column">
                             <Text size="4">
                               <Strong>Street:</Strong>{" "}
-                              {!user.address ? null : user.address.street}
+                              {user.address.street}
                             </Text>
                             <Text size="4">
                               <Strong>Suite:</Strong>{" "}
-                              {!user.address ? null : user.address.suite}
+                              {user.address.suite}
                             </Text>
                             <Text size="4">
                               <Strong>City:</Strong>{" "}
-                              {!user.address ? null : user.address.city}
+                              {user.address.city}
                             </Text>
                             <Text size="4">
                               <Strong>Zipcode:</Strong>{" "}
-                              {!user.address ? null : user.address.zipcode}
+                              {user.address.zipcode}
                             </Text>
                           </Flex>
                         </Card>
