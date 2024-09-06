@@ -9,9 +9,9 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Users />} />
-        <Route path="/create-user" element={<CreateUser />} />
-        <Route path="/edit-user/:id" element={<EditUser />} />
-        <Route path="/view-user/:id" element={<ViewUser />} />
+        <Route path="create-user" element={<CreateUser />} />
+        <Route path="edit-user/:id" element={<EditUser />} />
+        <Route path="view-user/:id" element={<ViewUser />} />
       </Routes>
     </Router>
   );
