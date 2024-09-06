@@ -89,22 +89,26 @@ function ViewUser() {
                       >
                         <Card>
                           <Flex direction="column">
-                            <Text size="4">
-                              <Strong>Street:</Strong>{" "}
-                              {user.address.street}
-                            </Text>
-                            <Text size="4">
-                              <Strong>Suite:</Strong>{" "}
-                              {user.address.suite}
-                            </Text>
-                            <Text size="4">
-                              <Strong>City:</Strong>{" "}
-                              {user.address.city}
-                            </Text>
-                            <Text size="4">
-                              <Strong>Zipcode:</Strong>{" "}
-                              {user.address.zipcode}
-                            </Text>
+                            {!user.address ? null : (
+                              <Text size="4">
+                                <Strong>Street:</Strong> {user.address.street}
+                              </Text>
+                            )}
+                            {!user.address ? null : (
+                              <Text size="4">
+                                <Strong>Suite:</Strong> {user.address.suite}
+                              </Text>
+                            )}
+                            {!user.address ? null : (
+                              <Text size="4">
+                                <Strong>City:</Strong> {user.address.city}
+                              </Text>
+                            )}
+                            {!user.address ? null : (
+                              <Text size="4">
+                                <Strong>Zipcode:</Strong> {user.address.zipcode}
+                              </Text>
+                            )}
                           </Flex>
                         </Card>
                       </Tabs.Content>
