@@ -26,3 +26,7 @@ This is a repository of React Axios Task's Solution.
 ```bash
  http://localhost:5173
 ```
+
+# Deployed URL:
+
+https://react-axios-task-app.netlify.app
